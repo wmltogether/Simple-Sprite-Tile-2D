@@ -2,7 +2,10 @@
 
 #### Unity Extension Type: 2D & Sprite Management
 
-## [中文版本说明](https://raw.githubusercontent.com/wmltogether/Simple-Sprite-Tile-2D/master/README_CN.md)
+## [中文版本说明](https://github.com/wmltogether/Simple-Sprite-Tile-2D/blob/master/README_CN.md)
+点击上面查看中文版本说明
+
+## Abstract
 
 moogle's simple sprite tile 2D Unity Editor Extension
 
