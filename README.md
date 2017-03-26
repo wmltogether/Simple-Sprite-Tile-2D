@@ -47,6 +47,7 @@ Click [Tools/Simple Sprite Tiles 2D /Tile Prefab Creator] ,toggle [Load From JSO
 
 
 ## About Sorting Order
+Add a tile panel (Tools/Simple Sprite Tile 2D/Add tile panel), move tile gameobjects to panel, toggle [Force sort by Y] then Press Update Order. The extension will manage the tiles automatically.
 
 ## Thanks
 [Unity Engine](https://unity3d.com/)
