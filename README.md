@@ -34,8 +34,8 @@ It is very easy to create RPG  Maker - STYLE tiles for Unity.
 5) Create Prefab, Add Tile Panel, set the tile-layer name and drag tiles to your game scene.
 
 
-## Advance Usage
-This extension supports tiles auto-generation with json. You could write your own json files (see sample.json) and load it with your texture.
+## Using JSON??
+Sure, This extension supports tiles auto-generation with json. You could write your own json files (see sample.json) and load it with your texture.
 
 I wrote a sample code to show how to make a json (see : /Scprits/JsonBuilder/TestGenJSON.cs). It‘s a simple class.
 
