@@ -1,0 +1,232 @@
+﻿{
+  "textureName": "sample.png",
+  "width": 64,
+  "Height": 96,
+  "pixelPerUnit": 32,
+  "tiles": [
+    {
+      "tileType": "Tile",
+      "tileName": "GroundBlock",
+      "tileTag": "GroundBlock",
+      "tileWidth":32,
+      "spriteMetaData": [
+        {
+          "name": "AANW",
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "AANE",
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CCNW",
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CCNE",
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "AASW",
+          "x": 0,
+          "y": 16,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "AASE",
+          "x": 16,
+          "y": 16,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CCSW",
+          "x": 32,
+          "y": 16,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CCSE",
+          "x": 48,
+          "y": 16,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CVNW",
+          "x": 0,
+          "y": 32,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "LRNE",
+          "x": 16,
+          "y": 32,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "LRNW",
+          "x": 32,
+          "y": 32,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CVNE",
+          "x": 48,
+          "y": 32,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "UDSW",
+          "x": 0,
+          "y": 48,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CTSE",
+          "x": 16,
+          "y": 48,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CTSW",
+          "x": 32,
+          "y": 48,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "UDSE",
+          "x": 48,
+          "y": 48,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "UDNW",
+          "x": 0,
+          "y": 64,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CTNE",
+          "x": 16,
+          "y": 64,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CTNW",
+          "x": 32,
+          "y": 64,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "UDNE",
+          "x": 48,
+          "y": 64,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CVSW",
+          "x": 0,
+          "y": 80,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "LRSE",
+          "x": 16,
+          "y": 80,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "LRSW",
+          "x": 32,
+          "y": 80,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        },
+        {
+          "name": "CVSE",
+          "x": 48,
+          "y": 80,
+          "width": 16,
+          "height": 16,
+          "pivotX": 0.5,
+          "pivotY": 0.5
+        }
+      ]
+    }
+  ]
+}
