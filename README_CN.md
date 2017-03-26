@@ -9,6 +9,10 @@ moogle's simple sprite tile 2D Unity Editor Extension
 Unity自带的sprite系统对于做 2D Tile式的RPG来说真是太难用了。于是这个工具就是用来自动根据sprite 生成prefab。
 生成的预设可以自动查找相邻的其他tile，构建tile并自动生成相应的边角样式，类似于RPG Maker的地图编辑。
 
+
+## 演示图
+![Extension Preview](https://github.com/wmltogether/Simple-Sprite-Tile-2D/blob/master/Assets/SimpleSpriteTile2D/preview.gif?raw=true)
+
 ## 功能
 
 * 自动在场景中对齐图块

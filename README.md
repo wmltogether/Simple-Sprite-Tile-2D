@@ -2,12 +2,17 @@
 
 #### Unity Extension Type: 2D & Sprite Management
 
+## [中文版本说明](https://raw.githubusercontent.com/wmltogether/Simple-Sprite-Tile-2D/master/README_CN.md)
+
 moogle's simple sprite tile 2D Unity Editor Extension
 
 This extension is Requires Unity 5.x or higher. I didn't test it under lower unity versions.
 But you can test it by yourself.
 
 I decided to make a tile-based top-down game with Unity. But unfortunately, Unity's default sprite-tile system are too hard to use in Editor Mode. So ,This extension can auto-generate tile prefabs with one simple texture.You can quickly make tiles that automatically find neighbors around them, and Auto-Update sprites to fit tiles just like the RPG - Maker tile map.
+
+## Preview
+![Extension Preview](https://github.com/wmltogether/Simple-Sprite-Tile-2D/blob/master/Assets/SimpleSpriteTile2D/preview.gif?raw=true)
 
 ## Features
 
