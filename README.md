@@ -10,7 +10,10 @@ But you can test it by yourself.
 I decided to make a tile-based top-down game with Unity. But unfortunately, Unity's default sprite-tile system are too hard to use in Editor Mode. So ,This extension can auto-generate tile prefabs with one simple texture.You can quickly make tiles that automatically find neighbors around them, and Auto-Update sprites to fit tiles just like the RPG - Maker tile map.
 
 ## Preview
+* Auto snap & adjust Tiles
  ![Extension Preview](https://github.com/wmltogether/Simple-Sprite-Tile-2D/blob/master/Assets/SimpleSpriteTile2D/preview.gif?raw=true)
+* Sorting Layer Management
+ ![Extension Preview](https://github.com/wmltogether/Simple-Sprite-Tile-2D/blob/master/Assets/SimpleSpriteTile2D/preview2.gif?raw=true)
 
 ## Features
 
