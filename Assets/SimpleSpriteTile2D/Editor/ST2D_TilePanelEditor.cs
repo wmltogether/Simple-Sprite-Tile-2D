@@ -12,19 +12,9 @@ namespace moogle.SmartTile2D
 
     public class ST2D_TilePanelEditor : Editor
     {
-        public static GUIContent[] sortingLayerDisplay = new GUIContent[] {
-            new GUIContent(){text="SLayer1"},
-            new GUIContent(){text="SLayer2"},
-            new GUIContent(){text="SLayer3"},
-            new GUIContent(){text="SLayer4"},
-            new GUIContent(){text="SLayer5"},
-            new GUIContent(){text="SLayer6"},
-            new GUIContent(){text="SLayer7"},
-            new GUIContent(){text="SLayer8"},
-            new GUIContent(){text="SLayer9"}
-
-        };
-        public static int[] sortingLayerUniqueIDs= new int[] {1,2,3,4,5,6,7,8,9};
+        public static GUIContent[] sortingLayerDisplay = new GUIContent[] {};
+        
+        public static int[] sortingLayerUniqueIDs= new int[]{};
         void getProperty()
         {
             obj = new SerializedObject(target);
@@ -36,9 +26,11 @@ namespace moogle.SmartTile2D
         void OnEnable()
         {
             getProperty();
+            InitTileSortingLayer();
         }
         public override void OnInspectorGUI()
         {
+            InitTileSortingLayer();
             DrawCustomInspector();
         }
         public void DrawCustomInspector()
@@ -62,38 +54,24 @@ namespace moogle.SmartTile2D
             }
         }
 
-        void AddSortingLayer(string sortingLayerName,int uniqueID){
+        void InitTileSortingLayer(){
+            List<GUIContent> _displaySLayerNames = new List<GUIContent>(){};
+            List<int> _sortingLayerUniqueIDs = new List<int>();
             SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
             SerializedProperty m_SortingLayers = tagManager.FindProperty("m_SortingLayers");
-            bool found = false;
             for (int i = 0; i < m_SortingLayers.arraySize; i++)
             {
                 SerializedProperty t = m_SortingLayers.GetArrayElementAtIndex(i);
-                if (t.FindPropertyRelative("name").stringValue.Equals(sortingLayerName))
-                {
-                    found = true;
-                    t.FindPropertyRelative("uniqueID").longValue = (long)uniqueID;
-                    break;
-                }
+                _displaySLayerNames.Add (new GUIContent(){text=t.FindPropertyRelative("name").stringValue});
+                _sortingLayerUniqueIDs.Add(t.FindPropertyRelative("uniqueID").intValue);
             }
-            if (!found)
-            {
-                m_SortingLayers.InsertArrayElementAtIndex(1);
-                SerializedProperty cur = m_SortingLayers.GetArrayElementAtIndex(1);
-                if (cur != null)
-                {
-                    cur.FindPropertyRelative("name").stringValue = sortingLayerName;
-                    cur.FindPropertyRelative("uniqueID").longValue = (long)uniqueID;
-                }
-            }
-            tagManager.ApplyModifiedProperties();
-
-
+            sortingLayerDisplay = _displaySLayerNames.ToArray();
+            sortingLayerUniqueIDs = _sortingLayerUniqueIDs.ToArray();
+            
         }
+       
         void SetOrder()
         {
-
-            AddSortingLayer(sortingLayerDisplay[sortingLayerIndex.intValue - 1].text,sortingLayerIndex.intValue);
             if (((ST2D_TilePanel)target).ForceSortOrderByYAxis == true)
             {
                 ((ST2D_TilePanel)target).ReSortOrderByY();

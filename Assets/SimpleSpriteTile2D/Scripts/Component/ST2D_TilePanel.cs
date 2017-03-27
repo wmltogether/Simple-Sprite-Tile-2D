@@ -7,11 +7,8 @@ namespace moogle.SmartTile2D
 		public class ST2D_TilePanel : MonoBehaviour {
         public bool ForceSortOrderByYAxis = false;
         [HideInInspector]
-        public string[] sortingLayerNames = new string[] {"Default","SLayer1","SLayer2","SLayer3",
-                                                        "SLayer4","SLayer5","SLayer6",
-                                                        "SLayer7","SLayer8","SLayer9"};
         public int sortingOrderOffset = 0;
-        public int sortingLayerIndex = 1;
+        public int sortingLayerIndex = 0;
 
         // Use this for initialization
         void Start () 
