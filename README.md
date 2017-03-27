@@ -11,8 +11,13 @@ I decided to make a tile-based top-down game with Unity. But unfortunately, Unit
 
 ## Preview
 * Auto snap & adjust Tiles
- ![Extension Preview](https://github.com/wmltogether/Simple-Sprite-Tile-2D/blob/master/Assets/SimpleSpriteTile2D/preview.gif?raw=true)
+
+
+ ![Extension Preview]
+ (https://github.com/wmltogether/Simple-Sprite-Tile-2D/blob/master/Assets/SimpleSpriteTile2D/preview.gif?raw=true)
 * Sorting Layer Management
+
+
  ![Extension Preview](https://github.com/wmltogether/Simple-Sprite-Tile-2D/blob/master/Assets/SimpleSpriteTile2D/preview2.gif?raw=true)
 
 ## Features
