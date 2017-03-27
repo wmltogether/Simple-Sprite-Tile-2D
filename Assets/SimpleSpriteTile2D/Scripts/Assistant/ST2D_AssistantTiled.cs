@@ -52,12 +52,12 @@ namespace moogle.SmartTile2D
 		}
 
 		string GetLayer(){
-			string layer = "Default";
+			string layer = "SLayer1";
 			if (transform.parent != null){
 				var panel = this.transform.parent.GetComponent<ST2D_TilePanel>();
 				
 				if (panel != null){
-					layer = panel.layerName;
+					layer = panel.sortingLayerNames[panel.sortingLayerIndex];
 				}
 			}
 			return layer;

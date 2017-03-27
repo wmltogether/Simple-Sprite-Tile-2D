@@ -6,13 +6,17 @@ namespace moogle.SmartTile2D
 {
 		public class ST2D_TilePanel : MonoBehaviour {
         public bool ForceSortOrderByYAxis = false;
-
+        [HideInInspector]
+        public string[] sortingLayerNames = new string[] {"Default","SLayer1","SLayer2","SLayer3",
+                                                        "SLayer4","SLayer5","SLayer6",
+                                                        "SLayer7","SLayer8","SLayer9"};
         public int sortingOrderOffset = 0;
-
-        public string layerName = "Layer";
+        public int sortingLayerIndex = 1;
 
         // Use this for initialization
-        void Start () {
+        void Start () 
+        {
+            SetSortingLayerID(sortingLayerIndex);
             if (ForceSortOrderByYAxis)
             {
                 //强制根据Y轴来排序SortOrder
@@ -25,6 +29,13 @@ namespace moogle.SmartTile2D
 		
 		}
 
+        void SetSortingLayerID(int sortingLayerIndex){
+            var renders = transform.GetComponentsInChildren<SpriteRenderer>();
+            foreach (var r in renders)
+            {
+                r.sortingLayerID = sortingLayerIndex;
+            }
+        }
         float GetLowerOffset()
         {
             float lowerOffset = 0;
@@ -46,10 +57,12 @@ namespace moogle.SmartTile2D
 
         public void ReSortOrderByY(float lowerOffset=0f)
         {
+            
             var renders = transform.GetComponentsInChildren<SpriteRenderer>();
             foreach (var r in renders)
             {
                 r.sortingOrder = -Mathf.RoundToInt((r.transform.position.y - lowerOffset));
+                r.sortingLayerID = sortingLayerIndex;
             }
         }
 
