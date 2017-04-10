@@ -151,7 +151,6 @@ namespace moogle.SmartTile2D
 		void OnDrawGizmosSelected()
 		{
 			var m_position = transform.position;
-			Gizmos.color = new Color(0,(float)1f,(float)0.75f,(float)0.3f);
 
 			Gizmos.DrawWireCube(m_position,transform.localScale * prefabTileAlign);
 			var from = m_position - new Vector3((prefabTileAlign / (float)2),

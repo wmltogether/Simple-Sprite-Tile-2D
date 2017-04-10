@@ -32,9 +32,12 @@ namespace moogle.SmartTile2D
                 childObject.transform.SetParent(transform);
                 childObject.name = childNameTable[i];
                 childObject.transform.localPosition = childPosBase[i]* ((float)tile_size / (float)pixelPerUnit_texture);
-                childObject.transform.localScale = Vector2.one * 1f;
+                childObject.transform.localScale = Vector3.one * 1f;
                 SpriteRenderer render = childObject.AddComponent<SpriteRenderer>();
                 render.sortingOrder = zOrder;
+				if (mat != null){
+					render.material = mat;
+				}
                 switch (childObject.name)
                 {
                     case "NW":
